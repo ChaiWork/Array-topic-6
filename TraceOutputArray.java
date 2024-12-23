@@ -1,3 +1,4 @@
+
 public class TraceOutputArray {
 
     public static void main(String[] args) {
@@ -6,6 +7,7 @@ public class TraceOutputArray {
 
         // Call the method
         traceOutput.traceOutputArray1();
+        traceOutput.traceOutputArray2();
     }
 
     // Method to demonstrate array operations
@@ -24,11 +26,18 @@ public class TraceOutputArray {
         }
     }
 
-    public void traceOutputArray2(){
+    public void traceOutputArray2() {
 
-        double tide[] ={12.2,-7.3,14.2,11.3};
-        System.out.print
+        double tide[] = {12.2, -7.3, 14.2, 11.3};
+        System.out.println("Elemeent in tide[1] is " + tide[1]);
+        System.out.println("Elemeent in tide[2] is " + tide[2]);
+        System.out.println("The lenght of tide[] array is " + tide.length);
+        System.out.println("The reverse element in tide array are ");
 
-        
+        for (int j = tide.length - 1; j >= 0; j--) {
+
+            System.out.print(tide[j] + " | ");
+        }
+
     }
 }
